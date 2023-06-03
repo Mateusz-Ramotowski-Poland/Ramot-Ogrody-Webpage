@@ -1,0 +1,7 @@
+@use "../styles/variables" as va;
+@use "../styles/colors" as co;
+
+.footer {
+  padding: 0 va.$header-footer-horizontal-padding;
+  border-top: 2px solid co.$primary;
+}

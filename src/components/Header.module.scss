@@ -1,5 +1,6 @@
 @use "../styles/colors" as co;
 @use "../styles/breakpoints" as bp;
+@use "../styles/variables" as va;
 
 $header-bottom-border: 2px solid co.$primary;
 
@@ -23,6 +24,7 @@ $header-bottom-border: 2px solid co.$primary;
   display: flex;
   font-size: inherit;
   min-height: 5rem;
+  padding: 1.5rem va.$header-footer-horizontal-padding;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -67,6 +69,7 @@ $header-bottom-border: 2px solid co.$primary;
       background: white;
       border-bottom: $header-bottom-border;
       display: block;
+      margin-left: -(va.$header-footer-horizontal-padding);
       position: absolute;
       text-align: center;
       top: 5rem;
@@ -105,7 +108,7 @@ $header-bottom-border: 2px solid co.$primary;
       padding: 1rem;
       width: min-content;
     }
-    @include bp.xlg {
+    @include bp.xxlg {
       width: auto;
     }
     &:first-child {
