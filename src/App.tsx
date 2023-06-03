@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { Certyfikaty, Faq, Glowna, Kontakt, PielegnacjaOgrodow, SprzedazDrzewa, WycinkaDrzew } from "./pages";
 import { Footer, Header, Hero } from "./components";
+import "./App.scss";
 
 export function App() {
   return (

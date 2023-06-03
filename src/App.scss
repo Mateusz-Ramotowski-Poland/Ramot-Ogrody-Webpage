@@ -1,0 +1,36 @@
+@use "./styles/colors" as co;
+@use "./styles/breakpoints" as bp;
+
+* {
+  box-sizing: border-box;
+  color: co.$primary-font;
+  font-family: "Lato-Regular", sans-serif;
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    color: co.$primary;
+    cursor: pointer;
+  }
+}
+
+body {
+  margin: 1rem;
+  font-size: 2rem;
+  @include bp.sm {
+    font-size: 2.5rem;
+    margin: 2rem;
+  }
+}
+
+li {
+  list-style: none;
+}
