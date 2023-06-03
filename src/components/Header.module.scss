@@ -18,7 +18,6 @@ $header-bottom-border: 2px solid co.$primary;
 }
 
 .header {
-  align-items: center;
   background-color: #fff;
   border-bottom: $header-bottom-border;
   display: flex;
@@ -26,7 +25,7 @@ $header-bottom-border: 2px solid co.$primary;
   min-height: 5rem;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 10;
 
   &.active {
     border-bottom: none;
@@ -35,7 +34,6 @@ $header-bottom-border: 2px solid co.$primary;
 
 .nav {
   display: flex;
-  width: 100%;
 
   &_links {
     display: flex;
