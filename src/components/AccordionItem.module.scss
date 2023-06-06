@@ -12,6 +12,17 @@
   margin-top: 2rem;
 }
 
+.hidden {
+  display: none;
+}
+
 .icon {
   font-size: 4rem;
+}
+
+.question {
+  align-items: center;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 3.5rem;
 }
