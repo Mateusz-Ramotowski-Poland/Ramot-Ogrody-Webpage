@@ -1,6 +1,6 @@
 import { PropsWithChildren } from "react";
-import styles from "./Container1440.module.scss";
+import styles from "./Container.module.scss";
 
-export const Container1440 = (props: PropsWithChildren) => {
+export const Container = (props: PropsWithChildren) => {
   return <div className={styles.container}>{props.children} </div>;
 };

@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { Certyfikaty, Faq, Glowna, Kontakt, PielegnacjaOgrodow, SprzedazDrzewa, WycinkaDrzew } from "./pages";
-import { Container1440, Footer, Header, Hero } from "./components";
+import { Container, Footer, Header, Hero } from "./components";
 import "./App.scss";
 
 export function App() {
@@ -8,7 +8,7 @@ export function App() {
     <>
       <Header />
       <Hero />
-      <Container1440>
+      <Container>
         <Routes>
           <Route path="/" element={<Glowna />}></Route>
           <Route path="/certyfikaty" element={<Certyfikaty />}></Route>
@@ -18,7 +18,7 @@ export function App() {
           <Route path="/sprzedaz-drzewa" element={<SprzedazDrzewa />}></Route>
           <Route path="/wycinka-drzew" element={<WycinkaDrzew />}></Route>
         </Routes>
-      </Container1440>
+      </Container>
       <Footer />
     </>
   );

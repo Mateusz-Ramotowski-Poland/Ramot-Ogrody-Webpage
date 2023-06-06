@@ -1,8 +1,8 @@
-@use "../styles/variables" as va;
 @use "../styles/colors" as co;
+@use "../styles/mixins" as mi;
 
 .footer {
   border-top: 2px solid co.$primary;
   margin-top: 2rem;
-  padding: 0 va.$header-footer-horizontal-padding;
+  @include mi.container;
 }

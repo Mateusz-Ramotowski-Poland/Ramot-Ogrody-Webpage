@@ -1,0 +1,10 @@
+@use "../styles/breakpoints" as bp;
+@use "../styles/variables" as va;
+
+@mixin container($padding-top-bottom: 0, $max-width: 144rem) {
+  padding: $padding-top-bottom va.$container-padding-small-screen;
+
+  @include bp.xlg {
+    padding: $padding-top-bottom max(va.$container-padding-big-screen, calc(100% - $max-width) / 2);
+  }
+}
