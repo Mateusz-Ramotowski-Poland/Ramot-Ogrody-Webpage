@@ -1,0 +1,17 @@
+@use "../styles/colors" as co;
+
+.accordion_item {
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 0.5rem;
+}
+
+.answer {
+  margin-top: 2rem;
+}
+
+.icon {
+  font-size: 4rem;
+}

@@ -1,3 +1,10 @@
+import { Accordion, TitleH2 } from "../components";
+
 export const Faq = () => {
-  return <div>Faq</div>;
+  return (
+    <>
+      <TitleH2 text="Najczęściej zadawane pytania" />
+      <Accordion />
+    </>
+  );
 };
