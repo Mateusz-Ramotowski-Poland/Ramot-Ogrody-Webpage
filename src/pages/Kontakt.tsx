@@ -1,3 +1,5 @@
+import { GoogleMap } from "../components";
+
 export const Kontakt = () => {
-  return <div>Kontakt</div>;
+  return <GoogleMap />;
 };

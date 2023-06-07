@@ -1,4 +1,5 @@
 export * from "./Footer";
+export * from "./GoogleMap";
 export * from "./Header";
 export * from "./Hero";
 export * from "./styles-wrappers/Container";
