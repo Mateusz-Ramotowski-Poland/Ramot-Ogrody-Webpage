@@ -1,5 +1,12 @@
-import { GoogleMap } from "../components";
+import { GoogleMap, TitleH2 } from "../components";
+import { ContactData } from "../components/ContactData";
 
 export const Kontakt = () => {
-  return <GoogleMap />;
+  return (
+    <>
+      <TitleH2 text="Kontakt" />
+      <ContactData />
+      <GoogleMap />
+    </>
+  );
 };

@@ -1,0 +1,21 @@
+@use "../styles/colors" as co;
+
+.contact_data {
+}
+
+.data_element {
+  align-items: center;
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 2rem;
+
+  & p {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+}
+
+.icon {
+  font-size: 6.4rem;
+  color: co.$primary;
+}
