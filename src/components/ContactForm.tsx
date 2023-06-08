@@ -6,7 +6,7 @@ export const ContactForm = () => {
       <form>
         <div>
           <label htmlFor="imie"> </label>
-          <input id="imie" name="imie" placeholder="Imię" required></input>
+          <input id="imie" minLength={3} name="imie" placeholder="Imię" required></input>
         </div>
         <div>
           <label htmlFor="email"> </label>
@@ -14,11 +14,19 @@ export const ContactForm = () => {
         </div>
         <div>
           <label htmlFor="telefon"> </label>
-          <input id="telefon" name="telefon" placeholder="Telefon" required type="tel"></input>
+          <input
+            id="telefon"
+            name="telefon"
+            //examples of validate numbers:'123456789' '123-456-789' '123 456 789' '123-456 789'
+            pattern="[0-9]{3}[\-\s]?[0-9]{3}[\-\s]?[0-9]{3}"
+            placeholder="Telefon"
+            required
+            type="tel"
+          ></input>
         </div>
         <div>
           <label htmlFor="miejsce"> </label>
-          <input id="miejsce" name="miejsce" placeholder="Miejsce realizacji" required></input>
+          <input id="miejsce" minLength={2} name="miejsce" placeholder="Miejsce realizacji" required></input>
         </div>
         <div>
           <label htmlFor="usluga"> </label>
