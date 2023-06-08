@@ -1,5 +1,4 @@
-import styles from "./Accordion.module.scss";
-import { AccordionItem } from "../components";
+import { AccordionItem, SectionContainer } from "../components";
 
 export const Accordion = () => {
   const accordionItems = [
@@ -58,7 +57,7 @@ export const Accordion = () => {
 
   return (
     <>
-      <div className={styles.container}>{accordionItemsList}</div>
+      <SectionContainer>{accordionItemsList}</SectionContainer>
     </>
   );
 };
