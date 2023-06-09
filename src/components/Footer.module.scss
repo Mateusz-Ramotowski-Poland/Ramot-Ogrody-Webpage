@@ -1,8 +1,9 @@
 @use "../styles/colors" as co;
 @use "../styles/mixins" as mi;
+@use "../styles/variables" as va;
 
 .footer {
   border-top: 2px solid co.$primary;
-  margin-top: 2rem;
+  margin-top: va.$section-title-margin;
   @include mi.container;
 }

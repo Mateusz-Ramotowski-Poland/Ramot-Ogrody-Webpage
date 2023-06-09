@@ -1,21 +1,35 @@
 @use "../styles/colors" as co;
+@use "../styles/breakpoints" as bp;
 
 .contact_data {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem 0;
 }
 
 .data_element {
   align-items: center;
   display: flex;
-  gap: 3rem;
+  gap: 1rem;
   margin-bottom: 2rem;
+  width: 23.5rem;
+  @include bp.sm {
+    gap: 3rem;
+  }
 
   & p {
-    font-size: 3rem;
+    font-size: 1.6rem;
     font-weight: 600;
+    @include bp.sm {
+      font-size: 3rem;
+    }
   }
 }
 
 .icon {
-  font-size: 6.4rem;
+  font-size: 3rem;
   color: co.$primary;
+  @include bp.sm {
+    font-size: 6.4rem;
+  }
 }

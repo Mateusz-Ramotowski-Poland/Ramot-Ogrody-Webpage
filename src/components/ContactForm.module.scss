@@ -1,0 +1,31 @@
+@use "../styles/colors" as co;
+
+$bg-color: #fff;
+
+.element {
+  margin-bottom: 1rem;
+
+  & textarea {
+    height: 12rem;
+  }
+}
+
+.input {
+  border: 2px solid $bg-color;
+  width: 100%;
+  background-color: $bg-color;
+  padding: 1rem;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 2px solid co.$primary;
+    outline: none;
+  }
+}
+
+::file-selector-button {
+  background-color: $bg-color;
+  border: none;
+  color: inherit;
+}

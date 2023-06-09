@@ -1,9 +1,11 @@
 @use "../../styles/breakpoints" as bp;
 @use "../../styles/colors" as co;
+@use "../../styles/variables" as va;
 
 .container {
   border: 2px solid co.$section-background;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
+  margin: va.$section-title-margin 0;
   padding: 0.5rem;
   background-color: co.$section-background;
   @include bp.xlg {

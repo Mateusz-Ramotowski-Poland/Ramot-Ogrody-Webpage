@@ -10,6 +10,13 @@ export const ContactData = () => {
         <p>Łukasz Ramotowski</p>
       </div>
       <div className={styles.data_element}>
+        <IonIcon icon={homeOutline} className={styles.icon} />
+        <div>
+          <p>Kamionki 25/2</p>
+          <p>11-500 Giżycko</p>
+        </div>
+      </div>
+      <div className={styles.data_element}>
         <IonIcon icon={callOutline} className={styles.icon} />
         <p>
           <a href="tel:+48 665 133 044">+48 665 133 044</a>
@@ -23,11 +30,10 @@ export const ContactData = () => {
       </div>
       <div className={styles.data_element}>
         <IonIcon icon={timeOutline} className={styles.icon} />
-        <p>Poniedziałek - Sobota: 7.00-17.00</p>
-      </div>
-      <div className={styles.data_element}>
-        <IonIcon icon={homeOutline} className={styles.icon} />
-        <p>Kamionki 25/2, 11-500 Giżycko</p>
+        <div>
+          <p>Poniedziałek - Sobota: </p>
+          <p>7.00-17.00</p>
+        </div>
       </div>
     </div>
   );
