@@ -43,11 +43,11 @@ export const ContactForm = () => {
           <label htmlFor="plik"></label>
           <input className={styles.input} id="plik" multiple name="plik" type="file"></input>
         </div>
-        <div className={styles.element}>
+        <div className={styles.textarea}>
           <label htmlFor="informacje"> </label>
           <textarea className={styles.input} id="informacje" name="informacje" placeholder="Dodatkowe informacje"></textarea>
         </div>
-        <div className={styles.element}>
+        <div className={styles.submit}>
           <button className={styles.input} type="submit">
             Zamów usługę
           </button>

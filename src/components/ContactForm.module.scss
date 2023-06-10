@@ -2,17 +2,27 @@
 @use "../styles/breakpoints" as bp;
 
 $bg-color: #fff;
+$gap-width: 1.5rem;
+
+@mixin shared {
+  margin-bottom: $gap-width;
+  @include bp.lg {
+    width: calc((100% - $gap-width) / 2);
+  }
+}
 
 .element {
-  margin-bottom: 1rem;
-
-  & textarea {
-    height: 12rem;
-  }
+  @include shared;
 }
 
 .form {
   grid-area: ContactForm;
+
+  @include bp.lg {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: $gap-width;
+  }
 }
 
 .input {
@@ -37,4 +47,24 @@ $bg-color: #fff;
   background-color: $bg-color;
   border: none;
   color: inherit;
+}
+
+.submit {
+  @include shared;
+
+  & button {
+    background-color: co.$primary;
+    color: #fff;
+  }
+}
+
+.textarea {
+  @include shared;
+  @include bp.lg {
+    width: 100%;
+  }
+
+  & textarea {
+    height: 12rem;
+  }
 }
