@@ -5,7 +5,7 @@
 .container {
   border: 2px solid co.$section-background;
   border-radius: 1rem;
-  margin: va.$section-title-margin 0;
+  margin-bottom: va.$section-title-margin;
   padding: 0.5rem;
   background-color: co.$section-background;
   @include bp.xlg {

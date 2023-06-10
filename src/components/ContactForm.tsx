@@ -4,7 +4,7 @@ import styles from "./ContactForm.module.scss";
 export const ContactForm = () => {
   return (
     <SectionContainer>
-      <form>
+      <form className={styles.form}>
         <div className={styles.element}>
           <label htmlFor="imie"> </label>
           <input className={styles.input} id="imie" minLength={3} name="imie" placeholder="Imię" required></input>

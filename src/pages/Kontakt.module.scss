@@ -1,0 +1,13 @@
+@use "../styles/breakpoints" as bp;
+
+.kontakt {
+  @include bp.md {
+    display: grid;
+    column-gap: 2rem;
+    grid-template-areas:
+      "TitleH2 TitleH2"
+      "ContactData ContactForm"
+      "GoogleMap GoogleMap";
+    grid-template-columns: 33rem 1fr;
+  }
+}

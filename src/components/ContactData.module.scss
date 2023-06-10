@@ -1,10 +1,16 @@
 @use "../styles/colors" as co;
 @use "../styles/breakpoints" as bp;
+@use "../styles/variables" as va;
 
 .contact_data {
   display: flex;
   flex-wrap: wrap;
-  margin: 3rem 0;
+  margin-bottom: va.$section-title-margin;
+  grid-area: ContactData;
+
+  @include bp.md {
+    flex-direction: column;
+  }
 }
 
 .data_element {
@@ -14,14 +20,14 @@
   margin-bottom: 2rem;
   width: 23.5rem;
   @include bp.sm {
-    gap: 3rem;
+    width: 30.7rem;
   }
 
   & p {
     font-size: 1.6rem;
     font-weight: 600;
     @include bp.sm {
-      font-size: 3rem;
+      font-size: 2rem;
     }
   }
 }
@@ -30,6 +36,6 @@
   font-size: 3rem;
   color: co.$primary;
   @include bp.sm {
-    font-size: 6.4rem;
+    font-size: 4.5rem;
   }
 }
