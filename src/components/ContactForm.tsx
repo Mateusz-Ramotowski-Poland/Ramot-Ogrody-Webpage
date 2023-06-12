@@ -1,10 +1,23 @@
+import { useState } from "react";
 import { SectionContainer } from "../components";
 import styles from "./ContactForm.module.scss";
 
 export const ContactForm = () => {
+  const serverUrl = "http://127.0.0.1:3001/";
+
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
+    const form = event.target as HTMLFormElement;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    console.log(data);
+    fetch(serverUrl, { method: "POST", body: JSON.stringify(data), headers: { "Content-Type": "application/json" } });
+  };
+
   return (
     <SectionContainer>
-      <form className={styles.form}>
+      <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.element}>
           <label htmlFor="imie"> </label>
           <input className={styles.input} id="imie" minLength={3} name="imie" placeholder="Imię" required></input>
@@ -34,9 +47,9 @@ export const ContactForm = () => {
           <label htmlFor="usluga"> </label>
           <select className={styles.input} id="usluga" name="usluga" required>
             <option value="">Wybierz usługę</option>
-            <option value="wycinka">Wycinka drzew</option>
-            <option value="ogrod">Pielęgnacja ogrodu</option>
-            <option value="opal">Sprzedaż drzewa</option>
+            <option value="Wycinka drzew">Wycinka drzew</option>
+            <option value="Pielęgnacja ogrodu">Pielęgnacja ogrodu</option>
+            <option value="Sprzedaż drzewa">Sprzedaż drzewa</option>
           </select>
         </div>
         <div className={styles.element}>
