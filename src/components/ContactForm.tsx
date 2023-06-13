@@ -2,21 +2,46 @@ import { useState } from "react";
 import { SectionContainer } from "../components";
 import styles from "./ContactForm.module.scss";
 import spinner from "../images/spinner200px.gif";
+import { api } from "../shared/api";
+import { IonIcon } from "@ionic/react";
+import { checkmarkCircleOutline, closeCircleOutline } from "../../node_modules/ionicons/icons";
 
 export const ContactForm = () => {
   const [isSendindForm, setIsSendindForm] = useState(false);
-  const serverUrl = "http://127.0.0.1:3001/";
+  const [deliveryStatus, setDeliveryStatus] = useState<string | null>(null);
+  const nieDostarczono = "Nie dostarczono wiadomości. Spróbuj ponownie za kilka minut";
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
     const form = event.target as HTMLFormElement;
     const formData = new FormData(form);
-    const data = Object.fromEntries(formData.entries());
+    const formDataPlainObject = Object.fromEntries(formData.entries());
 
-    console.log(data);
+    setDeliveryStatus(null);
     setIsSendindForm(true);
-    fetch(serverUrl, { method: "POST", body: JSON.stringify(data), headers: { "Content-Type": "application/json" } });
+
+    api
+      .post(formDataPlainObject)
+      .then((res) => res.json())
+      .then((body) => {
+        if (body.accepted[0] === "ramotOgrody@gmail.com") {
+          setDeliveryStatus("Dostarczono wiadomość");
+        } else {
+          setDeliveryStatus(nieDostarczono);
+        }
+      })
+      .catch(() => {
+        setDeliveryStatus(nieDostarczono);
+      })
+      .finally(() => setIsSendindForm(false));
   };
+
+  const deliveryStatusIcon =
+    deliveryStatus === nieDostarczono ? (
+      <IonIcon icon={closeCircleOutline} className={styles.failure_icon}></IonIcon>
+    ) : (
+      <IonIcon icon={checkmarkCircleOutline} className={styles.success_icon}></IonIcon>
+    );
 
   return (
     <SectionContainer>
@@ -69,8 +94,14 @@ export const ContactForm = () => {
           </button>
         </div>
         {isSendindForm && (
-          <div className={styles.spinner_container}>
+          <div className={styles.message_container}>
             <img src={spinner} alt="spinner" className={styles.spinner}></img> <span>Wysyłam wiadomość. Proszę, poczekaj na potwierdzenie</span>
+          </div>
+        )}
+        {deliveryStatus && (
+          <div className={styles.message_container}>
+            {deliveryStatusIcon}
+            <span>{deliveryStatus}</span>
           </div>
         )}
       </form>

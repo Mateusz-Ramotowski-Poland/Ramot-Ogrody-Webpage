@@ -11,8 +11,29 @@ $gap-width: 1.5rem;
   }
 }
 
+%icon {
+  font-size: 6rem;
+  margin: 0 1rem 1rem 0;
+  flex-shrink: 0;
+
+  @include bp.sm {
+    margin: 0 1rem 0 0;
+  }
+}
+
 .element {
   @include shared;
+}
+
+.failure_icon {
+  @extend %icon;
+  color: co.$failure;
+}
+
+::file-selector-button {
+  background-color: $bg-color;
+  border: none;
+  color: inherit;
 }
 
 .form {
@@ -43,18 +64,7 @@ $gap-width: 1.5rem;
   }
 }
 
-::file-selector-button {
-  background-color: $bg-color;
-  border: none;
-  color: inherit;
-}
-
-.spinner {
-  height: 10rem;
-  width: 10rem;
-}
-
-.spinner_container {
+.message_container {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -66,8 +76,14 @@ $gap-width: 1.5rem;
   }
 
   & span {
+    font-weight: bold;
     text-align: center;
   }
+}
+
+.spinner {
+  height: 10rem;
+  width: 10rem;
 }
 
 .submit {
@@ -75,8 +91,14 @@ $gap-width: 1.5rem;
 
   & button {
     background-color: co.$primary;
+    border: 2px solid co.$section-background;
     color: #fff;
   }
+}
+
+.success_icon {
+  @extend %icon;
+  color: co.$primary;
 }
 
 .textarea {
