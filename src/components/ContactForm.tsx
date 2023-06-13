@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { SectionContainer } from "../components";
 import styles from "./ContactForm.module.scss";
+import spinner from "../images/spinner200px.gif";
 
 export const ContactForm = () => {
+  const [isSendindForm, setIsSendindForm] = useState(false);
   const serverUrl = "http://127.0.0.1:3001/";
 
   const handleSubmit = (event: React.FormEvent) => {
@@ -12,6 +14,7 @@ export const ContactForm = () => {
     const data = Object.fromEntries(formData.entries());
 
     console.log(data);
+    setIsSendindForm(true);
     fetch(serverUrl, { method: "POST", body: JSON.stringify(data), headers: { "Content-Type": "application/json" } });
   };
 
@@ -65,6 +68,11 @@ export const ContactForm = () => {
             Zamów usługę
           </button>
         </div>
+        {isSendindForm && (
+          <div className={styles.spinner_container}>
+            <img src={spinner} alt="spinner" className={styles.spinner}></img> <span>Wysyłam wiadomość. Proszę, poczekaj na potwierdzenie</span>
+          </div>
+        )}
       </form>
     </SectionContainer>
   );

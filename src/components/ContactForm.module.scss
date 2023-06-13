@@ -49,6 +49,27 @@ $gap-width: 1.5rem;
   color: inherit;
 }
 
+.spinner {
+  height: 10rem;
+  width: 10rem;
+}
+
+.spinner_container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+  @include bp.sm {
+    flex-direction: row;
+  }
+
+  & span {
+    text-align: center;
+  }
+}
+
 .submit {
   @include shared;
 
