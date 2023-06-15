@@ -15,13 +15,11 @@ export const ContactForm = () => {
     event.preventDefault();
     const form = event.target as HTMLFormElement;
     const formData = new FormData(form);
-    const formDataPlainObject = Object.fromEntries(formData.entries());
-
     setDeliveryStatus(null);
     setIsSendindForm(true);
 
     api
-      .post(formDataPlainObject)
+      .post(formData)
       .then((res) => res.json())
       .then((body) => {
         if (body.accepted[0] === "ramotOgrody@gmail.com") {
@@ -82,7 +80,7 @@ export const ContactForm = () => {
         </div>
         <div className={styles.element}>
           <label htmlFor="plik"></label>
-          <input className={styles.input} id="plik" multiple name="plik" type="file"></input>
+          <input className={styles.input} id="plik" multiple name="files" type="file"></input>
         </div>
         <div className={styles.textarea}>
           <label htmlFor="informacje"> </label>
