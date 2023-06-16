@@ -1,8 +1,13 @@
 @use "../styles/variables" as va;
+@use "../styles/breakpoints" as bp;
 
 .h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
   grid-area: TitleH2;
   margin: va.$section-title-margin 0;
+
+  @include bp.sm {
+    font-size: 4rem;
+  }
 }
