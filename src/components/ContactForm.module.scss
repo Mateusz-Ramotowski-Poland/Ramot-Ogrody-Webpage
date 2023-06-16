@@ -44,7 +44,11 @@ $gap-width: 1.5rem;
   @include shared;
   align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+
+  & p {
+    line-height: 130%;
+  }
 }
 
 .form {

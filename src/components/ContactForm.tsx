@@ -71,11 +71,11 @@ export const ContactForm = () => {
       <form className={styles.form} onSubmit={handleSubmit} onClick={handleClick}>
         <div className={styles.element}>
           <label htmlFor="imie"> </label>
-          <input className={styles.input} id="imie" minLength={3} name="imie" placeholder="Imię" required></input>
+          <input className={styles.input} id="imie" minLength={3} name="imie" placeholder="* Imię" required></input>
         </div>
         <div className={styles.element}>
           <label htmlFor="email"> </label>
-          <input className={styles.input} id="email" name="email" placeholder="Email" required type="email"></input>
+          <input className={styles.input} id="email" name="email" placeholder="* Email" required type="email"></input>
         </div>
         <div className={styles.element}>
           <label htmlFor="telefon"> </label>
@@ -85,19 +85,19 @@ export const ContactForm = () => {
             name="telefon"
             //examples of validate numbers:'123456789' '123-456-789' '123 456 789' '123-456 789'
             pattern="[0-9]{3}[\-\s]?[0-9]{3}[\-\s]?[0-9]{3}"
-            placeholder="Telefon"
+            placeholder="* Telefon"
             required
             type="tel"
           ></input>
         </div>
         <div className={styles.element}>
           <label htmlFor="miejsce"> </label>
-          <input className={styles.input} id="miejsce" minLength={2} name="miejsce" placeholder="Miejsce realizacji" required></input>
+          <input className={styles.input} id="miejsce" minLength={2} name="miejsce" placeholder="* Miejsce realizacji" required></input>
         </div>
         <div className={styles.element}>
           <label htmlFor="usluga"> </label>
           <select className={styles.input} id="usluga" name="usluga" required>
-            <option value="">Wybierz usługę</option>
+            <option value="">* Wybierz usługę</option>
             <option value="Wycinka drzew">Wycinka drzew</option>
             <option value="Pielęgnacja ogrodu">Pielęgnacja ogrodu</option>
             <option value="Sprzedaż drzewa">Sprzedaż drzewa</option>
@@ -110,6 +110,9 @@ export const ContactForm = () => {
         <div className={styles.textarea}>
           <label htmlFor="informacje"> </label>
           <textarea className={styles.input} id="informacje" name="informacje" placeholder="Dodatkowe informacje"></textarea>
+        </div>
+        <div className={styles.flex_container}>
+          <p>* - pola obowiązkowe</p>
         </div>
         <div className={styles.flex_container}>
           <p className={filesSize > 24 ? styles.alert : ""}>Pliki: {filesSize.toFixed(2)}MB. Limit: 24MB</p>
