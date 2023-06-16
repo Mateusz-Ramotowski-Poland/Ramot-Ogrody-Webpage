@@ -107,11 +107,8 @@ $header-bottom-border: 2px solid co.$primary;
     margin: 0 auto;
     @include bp.lg {
       padding: 1rem;
-      width: min-content;
     }
-    @include bp.xxlg {
-      width: auto;
-    }
+
     &:first-child {
       padding-left: 0;
     }

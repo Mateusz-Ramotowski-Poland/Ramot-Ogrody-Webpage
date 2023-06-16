@@ -12,13 +12,17 @@ $gap-width: 1.5rem;
 }
 
 %icon {
-  font-size: 6rem;
+  font-size: 4rem;
   margin: 0 1rem 1rem 0;
   flex-shrink: 0;
 
   @include bp.sm {
     margin: 0 1rem 0 0;
   }
+}
+
+.alert {
+  color: co.$failure;
 }
 
 .element {
@@ -34,6 +38,13 @@ $gap-width: 1.5rem;
   background-color: $bg-color;
   border: none;
   color: inherit;
+}
+
+.flex_container {
+  @include shared;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .form {

@@ -4,15 +4,40 @@ import styles from "./ContactForm.module.scss";
 import spinner from "../images/spinner200px.gif";
 import { api } from "../shared/api";
 import { IonIcon } from "@ionic/react";
-import { checkmarkCircleOutline, closeCircleOutline } from "../../node_modules/ionicons/icons";
+import { alertCircleOutline, checkmarkCircleOutline, closeCircleOutline } from "../../node_modules/ionicons/icons";
+
+interface File {
+  size: number;
+}
 
 export const ContactForm = () => {
+  const [filesSize, setFilesSize] = useState(0); // google set atachments limit as 25 MB. I set 24MB limit in my app
   const [isSendindForm, setIsSendindForm] = useState(false);
   const [deliveryStatus, setDeliveryStatus] = useState<string | null>(null);
   const nieDostarczono = "Nie dostarczono wiadomości. Spróbuj ponownie za kilka minut";
 
+  const handleClick = () => {
+    setDeliveryStatus(null);
+  };
+
+  const handleInput = (event: any) => {
+    const files: File[] = event.target.files;
+    let filesSize = 0;
+    if (files.length !== 0) {
+      for (const file of files) {
+        filesSize += file.size;
+      }
+    }
+    setFilesSize(filesSize / 1000000);
+  };
+
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
+
+    if (filesSize > 24 || isSendindForm) {
+      return;
+    }
+
     const form = event.target as HTMLFormElement;
     const formData = new FormData(form);
     setDeliveryStatus(null);
@@ -36,14 +61,14 @@ export const ContactForm = () => {
 
   const deliveryStatusIcon =
     deliveryStatus === nieDostarczono ? (
-      <IonIcon icon={closeCircleOutline} className={styles.failure_icon}></IonIcon>
+      <IonIcon icon={closeCircleOutline} className={styles.failure_icon} />
     ) : (
-      <IonIcon icon={checkmarkCircleOutline} className={styles.success_icon}></IonIcon>
+      <IonIcon icon={checkmarkCircleOutline} className={styles.success_icon} />
     );
 
   return (
     <SectionContainer>
-      <form className={styles.form} onSubmit={handleSubmit}>
+      <form className={styles.form} onSubmit={handleSubmit} onClick={handleClick}>
         <div className={styles.element}>
           <label htmlFor="imie"> </label>
           <input className={styles.input} id="imie" minLength={3} name="imie" placeholder="Imię" required></input>
@@ -80,11 +105,14 @@ export const ContactForm = () => {
         </div>
         <div className={styles.element}>
           <label htmlFor="plik"></label>
-          <input className={styles.input} id="plik" multiple name="files" type="file"></input>
+          <input className={styles.input} id="plik" multiple name="files" type="file" onInput={handleInput}></input>
         </div>
         <div className={styles.textarea}>
           <label htmlFor="informacje"> </label>
           <textarea className={styles.input} id="informacje" name="informacje" placeholder="Dodatkowe informacje"></textarea>
+        </div>
+        <div className={styles.flex_container}>
+          <p className={filesSize > 24 ? styles.alert : ""}>Pliki: {filesSize.toFixed(2)}MB. Limit: 24MB</p>
         </div>
         <div className={styles.submit}>
           <button className={styles.input} type="submit">
@@ -100,6 +128,12 @@ export const ContactForm = () => {
           <div className={styles.message_container}>
             {deliveryStatusIcon}
             <span>{deliveryStatus}</span>
+          </div>
+        )}
+        {filesSize > 24 && (
+          <div className={styles.message_container}>
+            <IonIcon icon={alertCircleOutline} className={styles.failure_icon} />
+            <span>Przekroczono limit plików. Nie można wysłać wiadomości</span>
           </div>
         )}
       </form>
