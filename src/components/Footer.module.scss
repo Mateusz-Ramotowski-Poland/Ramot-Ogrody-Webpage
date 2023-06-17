@@ -5,5 +5,5 @@
 .footer {
   border-top: 2px solid co.$primary;
   margin-top: va.$section-title-margin;
-  @include mi.container;
+  @include mi.container($padding-top-bottom: 1.5rem);
 }
