@@ -40,6 +40,7 @@ export const ContactForm = () => {
 
     const form = event.target as HTMLFormElement;
     const formData = new FormData(form);
+    formData.append("webpage", "ramotOgrody"); //depending on the webpage value, the node.js server knows which gmail account to send the email to
     setDeliveryStatus(null);
     setIsSendindForm(true);
 
