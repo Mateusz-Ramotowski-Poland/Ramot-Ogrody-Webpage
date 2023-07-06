@@ -1,6 +1,6 @@
 @use "../styles/breakpoints" as bp;
 
-$title-top-position: 50rem;
+$title-bottom-position: 2rem;
 $text-left-position: 1rem;
 
 .hero {
@@ -13,14 +13,38 @@ $text-left-position: 1rem;
 }
 
 .paragraph_container {
-  font-size: 3.4rem;
+  font-size: 2.1rem;
   left: $text-left-position;
   position: absolute;
-  top: $title-top-position + 14rem;
+  bottom: $title-bottom-position;
+  @include bp.md {
+    font-size: 2.1rem;
+  }
+  @include bp.lg {
+    font-size: 2.3rem;
+  }
+  @include bp.xlg {
+    font-size: 2.8rem;
+  }
+  @include bp.xxlg {
+    font-size: 3.4rem;
+  }
 }
 
 .photo {
-  height: 80rem;
+  height: 50rem;
+  @include bp.md {
+    height: 50rem;
+  }
+  @include bp.lg {
+    height: 60rem;
+  }
+  @include bp.xlg {
+    height: 70rem;
+  }
+  @include bp.xxlg {
+    height: 80rem;
+  }
 
   &:nth-child(1) {
     width: 50%;
@@ -34,9 +58,25 @@ $text-left-position: 1rem;
 }
 
 .title {
-  font-size: 8rem;
+  font-size: 4.5rem;
   left: $text-left-position;
   letter-spacing: 0.4rem;
   position: absolute;
-  top: $title-top-position;
+  bottom: $title-bottom-position + 11rem;
+  @include bp.md {
+    bottom: $title-bottom-position + 11rem;
+    font-size: 4.5rem;
+  }
+  @include bp.lg {
+    bottom: $title-bottom-position + 13rem;
+    font-size: 6rem;
+  }
+  @include bp.xlg {
+    bottom: $title-bottom-position + 15rem;
+    font-size: 7rem;
+  }
+  @include bp.xxlg {
+    bottom: $title-bottom-position + 18rem;
+    font-size: 8rem;
+  }
 }

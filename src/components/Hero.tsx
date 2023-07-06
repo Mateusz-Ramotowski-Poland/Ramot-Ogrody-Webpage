@@ -8,8 +8,8 @@ export const Hero = () => {
     <div className={styles.hero}>
       <h1 className={styles.title}>Ramot ogrody</h1>
       <div className={styles.paragraph_container}>
-        <p className={styles.paragraph}>Płatność za ułożone drzewo, nie za powietrze</p>
-        <p className={styles.paragraph}>Profesjonalny sprzęt i bezpieczna wycinka</p>
+        <p className={styles.paragraph}>Płatność za ułożone drzewo</p>
+        <p className={styles.paragraph}>Profesjonalny sprzęt i bezpieczeństwo</p>
         <p className={styles.paragraph}>Dokładność w pracach ogrodniczych</p>
       </div>
       <ul>
