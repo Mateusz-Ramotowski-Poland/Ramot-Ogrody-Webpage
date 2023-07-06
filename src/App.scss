@@ -3,9 +3,6 @@
 
 * {
   box-sizing: border-box;
-  color: co.$primary-font;
-  font-family: "Lato-Regular", sans-serif;
-  font-size: inherit;
   margin: 0;
   padding: 0;
 }
@@ -16,6 +13,7 @@
 
 a {
   text-decoration: none;
+  color: co.$primary-font;
   &:hover {
     color: co.$primary;
     cursor: pointer;
@@ -23,6 +21,8 @@ a {
 }
 
 body {
+  color: co.$primary-font;
+  font-family: "Lato-Regular", sans-serif;
   font-size: 2rem;
 }
 

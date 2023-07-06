@@ -1,0 +1,42 @@
+@use "../styles/breakpoints" as bp;
+
+$title-top-position: 50rem;
+$text-left-position: 1rem;
+
+.hero {
+  color: #fff;
+  position: relative;
+}
+
+.paragraph {
+  margin-bottom: 0.5rem;
+}
+
+.paragraph_container {
+  font-size: 3.4rem;
+  left: $text-left-position;
+  position: absolute;
+  top: $title-top-position + 14rem;
+}
+
+.photo {
+  height: 80rem;
+
+  &:nth-child(1) {
+    width: 50%;
+  }
+  &:nth-child(2) {
+    width: 25%;
+  }
+  &:nth-child(3) {
+    width: 25%;
+  }
+}
+
+.title {
+  font-size: 8rem;
+  left: $text-left-position;
+  letter-spacing: 0.4rem;
+  position: absolute;
+  top: $title-top-position;
+}
