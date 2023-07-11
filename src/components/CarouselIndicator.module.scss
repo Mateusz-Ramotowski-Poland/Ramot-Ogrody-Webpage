@@ -1,0 +1,14 @@
+@use "../styles/colors" as co;
+@use "../styles/variables" as va;
+
+.active.indicator {
+  background-color: co.$primary-darker;
+}
+
+.indicator {
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  height: 1rem;
+  width: va.$hero-indicator-width;
+}

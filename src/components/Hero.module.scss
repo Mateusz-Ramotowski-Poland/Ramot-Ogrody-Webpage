@@ -10,7 +10,6 @@ $text-left-position: 1rem;
 }
 
 %shared-paragraph-container {
-  bottom: $title-bottom-position;
   left: $text-left-position;
   position: absolute;
 }
@@ -27,6 +26,7 @@ $text-left-position: 1rem;
 
   & .paragraph_container {
     @extend %shared-paragraph-container;
+    bottom: $title-bottom-position;
     font-size: 2.1rem;
     @include bp.md {
       font-size: 2.1rem;
@@ -92,17 +92,19 @@ $text-left-position: 1rem;
 }
 
 .container_smallest_sm {
-  //background: linear-gradient(#f00, #fff);
+  background: linear-gradient(to top, #111, transparent 55%);
   display: block;
-  // opacity: 0.3; // i must use this or similar css property
-  // position: relative;
-  //z-index: 1;
+  @include bp.sm {
+    background: linear-gradient(to top, #111, transparent 40%);
+  }
+
   @include bp.md {
     display: none;
   }
 
   & .paragraph_container {
     @extend %shared-paragraph-container;
+    bottom: $title-bottom-position + 1.5rem;
     font-size: 2.9rem;
 
     @include bp.sm {
@@ -111,11 +113,10 @@ $text-left-position: 1rem;
   }
 
   & .photo {
-    // display: block;
     height: 65rem;
     width: 100%;
-    //position: relative; // z-index works with position different than static
-    //z-index: -1;
+    position: relative; // z-index works with position different than static
+    z-index: -1;
 
     @include bp.sm {
       height: 80rem;
@@ -124,12 +125,12 @@ $text-left-position: 1rem;
 
   & .title {
     @extend %shared-title;
-    bottom: $title-bottom-position + 9rem;
+    bottom: $title-bottom-position + 10.5rem;
     font-size: 6rem;
     line-height: 90%;
 
     @include bp.sm {
-      bottom: $title-bottom-position + 7rem;
+      bottom: $title-bottom-position + 8.5rem;
       font-size: 7rem;
     }
   }

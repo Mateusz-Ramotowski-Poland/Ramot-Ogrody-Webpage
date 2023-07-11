@@ -1,9 +1,12 @@
+import { useState } from "react";
 import hero1 from "../images/hero1.jpg";
 import hero2 from "../images/hero2.jpg";
 import hero3 from "../images/hero3.jpg";
+import { CarouselIndicators } from "../components";
 import styles from "./Hero.module.scss";
 
 export const Hero = () => {
+  const [state, setState] = useState(0);
   return (
     <div className={styles.hero}>
       <div className={styles.container_smallest_sm}>
@@ -25,6 +28,7 @@ export const Hero = () => {
           <img src={hero3} alt="pilarz ścianający drzewo" className={styles.photo}></img>
         </ul>
       </div>
+      <CarouselIndicators maxState={2} state={state} setState={setState} />
     </div>
   );
 };
