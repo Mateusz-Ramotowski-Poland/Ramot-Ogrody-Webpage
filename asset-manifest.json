@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/Ramot-Ogrody-Webpage/static/css/main.55077f81.css",
-    "main.js": "/Ramot-Ogrody-Webpage/static/js/main.fee14d4e.js",
+    "main.js": "/Ramot-Ogrody-Webpage/static/js/main.7ec7cebb.js",
     "static/js/443.88e85e61.chunk.js": "/Ramot-Ogrody-Webpage/static/js/443.88e85e61.chunk.js",
     "static/js/738.0ac2f185.chunk.js": "/Ramot-Ogrody-Webpage/static/js/738.0ac2f185.chunk.js",
     "static/js/3.393ad002.chunk.js": "/Ramot-Ogrody-Webpage/static/js/3.393ad002.chunk.js",
     "static/js/372.1f38f63b.chunk.js": "/Ramot-Ogrody-Webpage/static/js/372.1f38f63b.chunk.js",
     "static/js/856.2f4f02ef.chunk.js": "/Ramot-Ogrody-Webpage/static/js/856.2f4f02ef.chunk.js",
     "static/js/787.22c43ede.chunk.js": "/Ramot-Ogrody-Webpage/static/js/787.22c43ede.chunk.js",
-    "static/media/hero3.jpg": "/Ramot-Ogrody-Webpage/static/media/hero3.ed0f6dc82d0d20e732b3.jpg",
-    "static/media/hero2.jpg": "/Ramot-Ogrody-Webpage/static/media/hero2.19854f553d4e277a9186.jpg",
-    "static/media/hero1.jpg": "/Ramot-Ogrody-Webpage/static/media/hero1.77aaa26feb0948cd87f2.jpg",
+    "static/media/hero3.webp": "/Ramot-Ogrody-Webpage/static/media/hero3.8ab61a74742170455fe3.webp",
+    "static/media/hero2.webp": "/Ramot-Ogrody-Webpage/static/media/hero2.8d094001b986e797fd03.webp",
     "static/media/spinner200px.gif": "/Ramot-Ogrody-Webpage/static/media/spinner200px.e8746d7a0a8557729bd4.gif",
+    "static/media/hero1.webp": "/Ramot-Ogrody-Webpage/static/media/hero1.892216a69cab0a6ba474.webp",
     "index.html": "/Ramot-Ogrody-Webpage/index.html",
     "main.55077f81.css.map": "/Ramot-Ogrody-Webpage/static/css/main.55077f81.css.map",
-    "main.fee14d4e.js.map": "/Ramot-Ogrody-Webpage/static/js/main.fee14d4e.js.map",
+    "main.7ec7cebb.js.map": "/Ramot-Ogrody-Webpage/static/js/main.7ec7cebb.js.map",
     "443.88e85e61.chunk.js.map": "/Ramot-Ogrody-Webpage/static/js/443.88e85e61.chunk.js.map",
     "738.0ac2f185.chunk.js.map": "/Ramot-Ogrody-Webpage/static/js/738.0ac2f185.chunk.js.map",
     "3.393ad002.chunk.js.map": "/Ramot-Ogrody-Webpage/static/js/3.393ad002.chunk.js.map",
@@ -24,6 +24,6 @@
   },
   "entrypoints": [
     "static/css/main.55077f81.css",
-    "static/js/main.fee14d4e.js"
+    "static/js/main.7ec7cebb.js"
   ]
 }
