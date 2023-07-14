@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import hero1 from "../images/hero1.jpg";
-import hero2 from "../images/hero2.jpg";
-import hero3 from "../images/hero3.jpg";
+import hero1 from "../images/hero1.webp";
+import hero2 from "../images/hero2.webp";
+import hero3 from "../images/hero3.webp";
 import { CarouselIndicators } from "../components";
 import styles from "./Hero.module.scss";
 
