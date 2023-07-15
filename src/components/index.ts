@@ -2,6 +2,8 @@ export * from "./Accordion";
 export * from "./AccordionItem";
 export * from "./CarouselIndicator";
 export * from "./CarouselIndicators";
+export * from "./CertyfikatyBigImageCarousel";
+export * from "./CertyfikatySmallImagesGallery";
 export * from "./ContactData";
 export * from "./ContactForm";
 export * from "./styles-wrappers/Container";
