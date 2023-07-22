@@ -1,14 +1,45 @@
+@use "../styles/breakpoints" as bp;
+@use "../styles/colors" as co;
+@use "../styles/variables" as va;
+
 .container {
-  background-color: #eee;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   left: 0;
   position: fixed;
-  text-align: center;
   top: 0;
   width: 100vw;
   z-index: 11;
+  @include bp.sm {
+    display: block;
+    text-align: center;
+  }
+}
+
+.icon {
+  color: co.$primary;
+  font-size: va.$certyfikaty-icon-smallest-md;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+
+  @include bp.lg {
+    font-size: va.$certyfikaty-icon-lg-xxxlg;
+  }
 }
 
 .img {
-  height: calc(100% - 4rem);
+  height: auto;
+  max-width: 100%;
+
+  @include bp.sm {
+    height: calc(100% - va.$certyfikaty-icon-smallest-md - 1rem);
+  }
+
+  @include bp.lg {
+    height: calc(100% - 3rem);
+  }
 }

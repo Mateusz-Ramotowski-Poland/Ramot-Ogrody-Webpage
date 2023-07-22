@@ -6,7 +6,7 @@ $indicator-width: va.$certyfikaty-indicator-width;
 $gap: 1rem;
 
 .container {
-  bottom: 1.5rem;
+  bottom: 0.8rem;
   display: flex;
   gap: $gap;
   left: calc((100% - ($number-of-indicators * $indicator-width) - (($number-of-indicators - 1) * $gap)) / 2);

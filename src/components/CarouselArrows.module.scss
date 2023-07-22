@@ -1,27 +1,33 @@
 @use "../styles/breakpoints" as bp;
 @use "../styles/colors" as co;
+@use "../styles/variables" as va;
 
-$from-side: 12rem;
-$font-size-smallest: 5rem;
-$font-size-sm-xxxlg: 8rem;
+$from-side-smallest-lg: 4rem;
+$from-side-xlg-xxxlg: 14rem;
 
 %icon {
+  bottom: 0.5rem;
   color: co.$primary;
-  font-size: $font-size-smallest;
+  font-size: va.$certyfikaty-icon-smallest-md;
   position: absolute;
-  bottom: calc((100vh - $font-size-smallest) / 2);
-  @include bp.sm {
-    bottom: calc((100vh - $font-size-sm-xxxlg) / 2);
-    font-size: $font-size-sm-xxxlg;
+  @include bp.lg {
+    bottom: calc((100vh - va.$certyfikaty-icon-lg-xxxlg) / 2);
+    font-size: va.$certyfikaty-icon-lg-xxxlg;
   }
 }
 
 .icon_left {
   @extend %icon;
-  left: $from-side;
+  left: $from-side-smallest-lg;
+  @include bp.xlg {
+    left: $from-side-xlg-xxxlg;
+  }
 }
 
 .icon_right {
   @extend %icon;
-  right: $from-side;
+  right: $from-side-smallest-lg;
+  @include bp.xlg {
+    right: $from-side-xlg-xxxlg;
+  }
 }
