@@ -1,0 +1,14 @@
+@use "../styles/breakpoints" as bp;
+@use "../styles/variables" as va;
+
+$number-of-indicators: 4;
+$indicator-width: va.$certyfikaty-indicator-width;
+$gap: 1rem;
+
+.container {
+  bottom: 1.5rem;
+  display: flex;
+  gap: $gap;
+  left: calc((100% - ($number-of-indicators * $indicator-width) - (($number-of-indicators - 1) * $gap)) / 2);
+  position: absolute;
+}

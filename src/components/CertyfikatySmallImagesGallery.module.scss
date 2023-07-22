@@ -1,10 +1,13 @@
 @use "../styles/breakpoints" as bp;
+@use "../styles/colors" as co;
 
+$average-figcaption-height: 5rem;
 $gap: 5rem;
 $figure-width-smallest: 100%;
 $figure-width-sm: calc((100% - 1 * $gap) / 2);
 $figure-width-md-xlg: calc((100% - 2 * $gap) / 3);
 $figure-width-xxlg-xxxlg: calc((100% - 3 * $gap) / 4);
+$icon-height-width: 7rem;
 
 .container {
   display: flex;
@@ -19,6 +22,7 @@ $figure-width-xxlg-xxxlg: calc((100% - 3 * $gap) / 4);
 }
 
 .figure {
+  position: relative;
   width: $figure-width-smallest;
   @include bp.sm {
     width: $figure-width-sm;
@@ -28,6 +32,30 @@ $figure-width-xxlg-xxxlg: calc((100% - 3 * $gap) / 4);
   }
   @include bp.xxlg {
     width: $figure-width-xxlg-xxxlg;
+  }
+
+  &:hover {
+    .img {
+      position: relative;
+      z-index: -1;
+    }
+
+    .img_container {
+      background: linear-gradient(to top, #fff, transparent);
+    }
+
+    .icon {
+      color: co.$primary;
+      display: block;
+      font-size: $icon-height-width;
+      left: calc((100% - $icon-height-width) / 2);
+      position: absolute;
+      top: calc((100% - $icon-height-width - $average-figcaption-height) / 2);
+    }
+  }
+
+  .icon {
+    display: none;
   }
 }
 

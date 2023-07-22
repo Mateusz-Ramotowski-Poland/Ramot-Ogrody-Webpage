@@ -1,0 +1,27 @@
+@use "../styles/breakpoints" as bp;
+@use "../styles/colors" as co;
+
+$from-side: 12rem;
+$font-size-smallest: 5rem;
+$font-size-sm-xxxlg: 8rem;
+
+%icon {
+  color: co.$primary;
+  font-size: $font-size-smallest;
+  position: absolute;
+  bottom: calc((100vh - $font-size-smallest) / 2);
+  @include bp.sm {
+    bottom: calc((100vh - $font-size-sm-xxxlg) / 2);
+    font-size: $font-size-sm-xxxlg;
+  }
+}
+
+.icon_left {
+  @extend %icon;
+  left: $from-side;
+}
+
+.icon_right {
+  @extend %icon;
+  right: $from-side;
+}

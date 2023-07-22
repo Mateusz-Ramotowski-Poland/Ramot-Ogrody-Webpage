@@ -76,7 +76,7 @@ export const Hero = () => {
           <img src={hero3} alt="pilarz ścianający drzewo" className={styles.photo}></img>
         </ul>
       </div>
-      <CarouselIndicators maxState={maxState} state={state} setState={setState} />
+      <CarouselIndicators maxState={maxState} state={state} setState={setState} styles="hero" />
     </div>
   );
 };

@@ -1,41 +1,28 @@
-import certyfikaty1 from "../images/certyfikaty1.webp";
-import certyfikaty2 from "../images/certyfikaty2.webp";
-import certyfikaty3 from "../images/certyfikaty3.webp";
-import certyfikaty4 from "../images/certyfikaty4.webp";
 import styles from "./CertyfikatySmallImagesGallery.module.scss";
+import { IonIcon } from "@ionic/react";
+import { expandOutline } from "../../node_modules/ionicons/icons";
+import { Image } from "../pages/Certyfikaty";
 
-const images = [
-  {
-    alt: "Kurs: 'Pilarz-drwal, operator pilarki. Pięlęgnacja drzew'",
-    figcaption: "Kurs: 'Pilarz-drwal, operator pilarki. Pięlęgnacja drzew",
-    id: 1,
-    source: certyfikaty1,
-  },
-  {
-    alt: "Szkolenie: 'Zasady cięcia drzew i krzewów ozdobnych'",
-    figcaption: "Szkolenie: 'Zasady cięcia drzew i krzewów ozdobnych'",
-    id: 2,
-    source: certyfikaty2,
-  },
-  {
-    alt: "Kurs: 'Praca na wysokości. Praca na drzewach - arborysta'",
-    figcaption: "Kurs: 'Praca na wysokości. Praca na drzewach - arborysta'",
-    id: 3,
-    source: certyfikaty3,
-  },
-  {
-    alt: "Szkolenie z zakresu wzmocnień mechanicznych drzew",
-    figcaption: "Szkolenie z zakresu wzmocnień mechanicznych drzew",
-    id: 4,
-    source: certyfikaty4,
-  },
-];
+interface Props {
+  images: Image[];
+  setCarouselImage: React.Dispatch<React.SetStateAction<number>>;
+  setIsCarouselVisible: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
-export const CertyfikatySmallImagesGallery = () => {
-  const imagesList = images.map((image) => (
-    <figure key={image.id} className={styles.figure}>
-      <img src={image.source} alt={image.alt} className={styles.img} />
+export const CertyfikatySmallImagesGallery = (props: Props) => {
+  const handleClick = (event: React.MouseEvent) => {
+    props.setIsCarouselVisible(true);
+    props.setCarouselImage(Number((event.currentTarget as HTMLElement).dataset.id as string));
+  };
+
+  const imagesList = props.images.map((image) => (
+    <figure data-id={image.id} key={image.id} className={styles.figure} onClick={handleClick}>
+      <div className={styles.img_container}>
+        <img src={image.source} alt={image.alt} className={styles.img} />
+      </div>
+
       <figcaption className={styles.figcaption}>{image.figcaption}</figcaption>
+      <IonIcon icon={expandOutline} className={styles.icon} />
     </figure>
   ));
 

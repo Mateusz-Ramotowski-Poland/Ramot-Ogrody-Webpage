@@ -1,0 +1,14 @@
+.container {
+  background-color: #eee;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100vw;
+  z-index: 11;
+}
+
+.img {
+  height: calc(100% - 4rem);
+}
