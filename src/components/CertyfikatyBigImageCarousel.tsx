@@ -1,10 +1,9 @@
 import styles from "./CertyfikatyBigImageCarousel.module.scss";
 import { Image } from "../pages/Certyfikaty";
 import { IonIcon } from "@ionic/react";
-import { closeOutline } from "../../node_modules/ionicons/icons";
+import { addCircleOutline, closeOutline, removeCircleOutline } from "../../node_modules/ionicons/icons";
 import { CarouselArrows, CarouselIndicators } from "../components";
 import { useEffect, useRef } from "react";
-
 interface Props {
   carouselImage: number;
   images: Image[];
@@ -37,7 +36,10 @@ export const CertyfikatyBigImageCarousel = (props: Props) => {
 
   return (
     <section className={styles.container} onClick={handleContainerClick} ref={containerRef}>
-      <IonIcon icon={closeOutline} className={styles.icon} ref={exitRef} />
+      <IonIcon icon={addCircleOutline} className={styles.icon_plus} />
+      <IonIcon icon={removeCircleOutline} className={styles.icon_minus} />
+      <IonIcon icon={closeOutline} className={styles.icon_exit} ref={exitRef} />
+
       <CarouselArrows maxState={props.images.length - 1} setState={props.setCarouselImage} state={props.carouselImage} />
       <img
         key={props.images[props.carouselImage].id}

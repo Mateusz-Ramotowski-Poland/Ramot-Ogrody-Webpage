@@ -2,16 +2,35 @@
 @use "../styles/colors" as co;
 @use "../styles/variables" as va;
 
+$icon-right-corner: 0.5rem;
+$icon-gap: 0rem;
+
+%icon {
+  background-color: transparent;
+  color: co.$primary;
+  font-size: va.$certyfikaty-icon-smallest-md;
+  position: absolute;
+  top: 0.5rem;
+  @include bp.sm {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  @include bp.lg {
+    background-color: transparent;
+    font-size: va.$certyfikaty-icon-lg-xxxlg;
+  }
+}
+
 .container {
   background-color: #ddd;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   left: 0;
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   z-index: 11;
   @include bp.sm {
     display: block;
@@ -19,15 +38,24 @@
   }
 }
 
-.icon {
-  color: co.$primary;
-  font-size: va.$certyfikaty-icon-smallest-md;
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
+.icon_exit {
+  @extend %icon;
+  right: $icon-right-corner;
+}
 
+.icon_minus {
+  @extend %icon;
+  right: $icon-right-corner + va.$certyfikaty-icon-smallest-md + $icon-gap;
   @include bp.lg {
-    font-size: va.$certyfikaty-icon-lg-xxxlg;
+    right: $icon-right-corner + va.$certyfikaty-icon-lg-xxxlg + $icon-gap;
+  }
+}
+
+.icon_plus {
+  @extend %icon;
+  right: $icon-right-corner + 2 * va.$certyfikaty-icon-smallest-md + 2 * $icon-gap;
+  @include bp.lg {
+    right: $icon-right-corner + 2 * va.$certyfikaty-icon-lg-xxxlg + 2 * $icon-gap;
   }
 }
 
