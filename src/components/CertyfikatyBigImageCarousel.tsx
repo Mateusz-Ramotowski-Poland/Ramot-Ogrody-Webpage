@@ -59,6 +59,17 @@ export const CertyfikatyBigImageCarousel = (props: Props) => {
     return () => window.removeEventListener("keydown", exitCarousel);
   }, []);
 
+  useEffect(() => {
+    const handleMouseMove = (event: MouseEvent) => {
+      console.log(event.clientX);
+      console.log(event.clientY);
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
+
   return (
     <section className={styles.container} onClick={handleContainerClick} ref={containerRef}>
       <IonIcon icon={addCircleOutline} className={styles.icon_plus} onClick={handlePlusClick} />
@@ -66,13 +77,16 @@ export const CertyfikatyBigImageCarousel = (props: Props) => {
       <IonIcon icon={closeOutline} className={styles.icon_exit} ref={exitRef} />
 
       <CarouselArrows maxState={props.images.length - 1} setState={props.setCarouselImage} state={props.carouselImage} />
-      <img
-        key={props.images[props.carouselImage].id}
-        src={props.images[props.carouselImage].source}
-        alt={props.images[props.carouselImage].alt}
-        className={styles.img}
-        ref={imgRef}
-      />
+      <figure className={styles.figure}>
+        <img
+          key={props.images[props.carouselImage].id}
+          src={props.images[props.carouselImage].source}
+          alt={props.images[props.carouselImage].alt}
+          className={styles.img}
+          ref={imgRef}
+        />
+      </figure>
+
       <CarouselIndicators maxState={props.images.length - 1} setState={props.setCarouselImage} state={props.carouselImage} styles="certyfikaty" />
     </section>
   );

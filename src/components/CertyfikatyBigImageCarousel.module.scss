@@ -60,8 +60,11 @@ $icon-gap: 0rem;
   }
 }
 
-.img {
+.figure {
   height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 80rem;
   max-width: 100%;
 
   @include bp.sm {
@@ -71,4 +74,8 @@ $icon-gap: 0rem;
   @include bp.lg {
     height: calc(100% - 3rem);
   }
+}
+
+.img {
+  max-width: 100%;
 }
