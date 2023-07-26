@@ -10,6 +10,7 @@ $from-side-xlg-xxxlg: 14rem;
   color: co.$primary;
   font-size: va.$certyfikaty-icon-smallest-md;
   position: absolute;
+  z-index: 12;
   @include bp.lg {
     bottom: calc((100vh - va.$certyfikaty-icon-lg-xxxlg) / 2);
     font-size: va.$certyfikaty-icon-lg-xxxlg;

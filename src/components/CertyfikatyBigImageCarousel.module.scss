@@ -11,6 +11,7 @@ $icon-gap: 0rem;
   font-size: va.$certyfikaty-icon-smallest-md;
   position: absolute;
   top: 0.5rem;
+  z-index: 12;
   @include bp.sm {
     background-color: rgba(0, 0, 0, 0.7);
   }
