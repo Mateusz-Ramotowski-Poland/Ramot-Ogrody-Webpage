@@ -114,6 +114,7 @@ export const CertyfikatyBigImageCarousel = (props: Props) => {
           onMouseDown={handleMouseDown}
         />
       </figure>
+      <p className={styles.description}>Kliknij i przesuń mysz aby przesunąć zdjęcie. Możesz też przybliżyć, oddalić zdjęcie.</p>
       <CarouselIndicators maxState={props.images.length - 1} setState={props.setCarouselImage} state={props.carouselImage} styles="certyfikaty" />
     </section>
   );

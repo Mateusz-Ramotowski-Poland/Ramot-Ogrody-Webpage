@@ -47,7 +47,7 @@ export const Certyfikaty = () => {
   return (
     <>
       <TitleH2 text="Certyfikaty" />
-      <p className={styles.introduction}>wstęp </p>
+      <p className={styles.introduction}>Kliknij zdjęcie aby je powiększyć</p>
       <CertyfikatySmallImagesGallery images={images} setIsCarouselVisible={setIsCarouselVisible} setCarouselImage={setCarouselImage} />
       {isCarouselVisible && (
         <CertyfikatyBigImageCarousel

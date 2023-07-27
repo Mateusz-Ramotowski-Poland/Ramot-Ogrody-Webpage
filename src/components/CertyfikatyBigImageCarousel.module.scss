@@ -23,10 +23,11 @@ $icon-gap: 0rem;
 }
 
 .container {
+  align-items: center;
   background-color: #ddd;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
   height: 100%;
   left: 0;
   position: fixed;
@@ -36,6 +37,36 @@ $icon-gap: 0rem;
   @include bp.sm {
     display: block;
     text-align: center;
+  }
+}
+
+.description {
+  font-size: 2rem;
+  margin: 1rem 4.5rem 3rem 4.5rem;
+  text-align: center;
+  @include bp.sm {
+    font-size: 2.2rem;
+  }
+
+  @include bp.lg {
+    font-size: 2.5rem;
+    margin: 1rem auto;
+  }
+}
+
+.figure {
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 80rem;
+  max-width: 100%;
+
+  @include bp.sm {
+    height: calc(100% - va.$certyfikaty-icon-smallest-md - 3.5rem);
+  }
+
+  @include bp.lg {
+    height: calc(100% - 6.5rem);
   }
 }
 
@@ -57,22 +88,6 @@ $icon-gap: 0rem;
   right: $icon-right-corner + 2 * va.$certyfikaty-icon-smallest-md + 2 * $icon-gap;
   @include bp.lg {
     right: $icon-right-corner + 2 * va.$certyfikaty-icon-lg-xxxlg + 2 * $icon-gap;
-  }
-}
-
-.figure {
-  height: auto;
-  margin: 0 auto;
-  overflow: hidden;
-  width: 80rem;
-  max-width: 100%;
-
-  @include bp.sm {
-    height: calc(100% - va.$certyfikaty-icon-smallest-md - 1rem);
-  }
-
-  @include bp.lg {
-    height: calc(100% - 3rem);
   }
 }
 
