@@ -59,6 +59,19 @@ export const CertyfikatyBigImageCarousel = (props: Props) => {
     return () => window.removeEventListener("keydown", exitCarousel);
   }, []);
 
+  useEffect(() => {
+    const hideScrollbar = () => {
+      document.body.style.overflow = "hidden";
+    };
+    const showScrollbar = () => {
+      document.body.style.overflow = "visible";
+    };
+
+    hideScrollbar();
+
+    return () => showScrollbar();
+  }, []);
+
   const handleMouseMove = (e: React.MouseEvent) => {
     if (e.buttons !== 0) {
       // mouse buttons were clicked
