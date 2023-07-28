@@ -9,6 +9,7 @@ interface Props {
   images: Image[];
   setCarouselImage: React.Dispatch<React.SetStateAction<number>>;
   setIsCarouselVisible: React.Dispatch<React.SetStateAction<boolean>>;
+  stylesIndicators: "hero" | "certyfikaty" | "wycinka";
 }
 
 export const BigImageCarousel = (props: Props) => {
@@ -128,7 +129,12 @@ export const BigImageCarousel = (props: Props) => {
         />
       </figure>
       <p className={styles.description}>Kliknij i przesuń mysz aby przesunąć zdjęcie. Możesz też przybliżyć, oddalić zdjęcie.</p>
-      <CarouselIndicators maxState={props.images.length - 1} setState={props.setCarouselImage} state={props.carouselImage} styles="certyfikaty" />
+      <CarouselIndicators
+        maxState={props.images.length - 1}
+        setState={props.setCarouselImage}
+        state={props.carouselImage}
+        styles={props.stylesIndicators}
+      />
     </section>
   );
 };

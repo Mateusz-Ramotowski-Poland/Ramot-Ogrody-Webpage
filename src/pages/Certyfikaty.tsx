@@ -55,6 +55,7 @@ export const Certyfikaty = () => {
           images={images}
           setCarouselImage={setCarouselImage}
           setIsCarouselVisible={setIsCarouselVisible}
+          stylesIndicators="certyfikaty"
         />
       )}
     </>
