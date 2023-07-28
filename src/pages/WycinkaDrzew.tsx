@@ -5,6 +5,7 @@ import wycinka4 from "../images/wycinka4.webp";
 import wycinka5 from "../images/wycinka5.webp";
 import wycinka6 from "../images/wycinka6.webp";
 import wycinka7 from "../images/wycinka7.webp";
+import wycinka8 from "../images/wycinka8.webp";
 import { BigImageCarousel, SmallImagesGallery, TitleH2 } from "../components";
 import styles from "./WycinkaDrzew.module.scss";
 import { Image } from "../pages";
@@ -45,6 +46,11 @@ const images: Image[] = [
     alt: "Pilarz",
     id: 6,
     source: wycinka7,
+  },
+  {
+    alt: "Pilarz",
+    id: 7,
+    source: wycinka8,
   },
 ];
 
