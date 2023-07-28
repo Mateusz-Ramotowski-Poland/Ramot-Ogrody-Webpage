@@ -3,12 +3,12 @@ import certyfikaty2 from "../images/certyfikaty2.webp";
 import certyfikaty3 from "../images/certyfikaty3.webp";
 import certyfikaty4 from "../images/certyfikaty4.webp";
 import { useState } from "react";
-import { CertyfikatyBigImageCarousel, CertyfikatySmallImagesGallery, TitleH2 } from "../components";
+import { BigImageCarousel, SmallImagesGallery, TitleH2 } from "../components";
 import styles from "./Certyfikaty.module.scss";
 
 export interface Image {
   alt: string;
-  figcaption: string;
+  figcaption?: string;
   id: number;
   source: string;
 }
@@ -48,9 +48,9 @@ export const Certyfikaty = () => {
     <>
       <TitleH2 text="Certyfikaty" />
       <p className={styles.introduction}>Kliknij zdjęcie aby je powiększyć</p>
-      <CertyfikatySmallImagesGallery images={images} setIsCarouselVisible={setIsCarouselVisible} setCarouselImage={setCarouselImage} />
+      <SmallImagesGallery images={images} setIsCarouselVisible={setIsCarouselVisible} setCarouselImage={setCarouselImage} />
       {isCarouselVisible && (
-        <CertyfikatyBigImageCarousel
+        <BigImageCarousel
           carouselImage={carouselImage}
           images={images}
           setCarouselImage={setCarouselImage}

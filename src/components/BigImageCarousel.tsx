@@ -1,7 +1,7 @@
-import styles from "./CertyfikatyBigImageCarousel.module.scss";
+import styles from "./BigImageCarousel.module.scss";
 import { Image } from "../pages/Certyfikaty";
 import { IonIcon } from "@ionic/react";
-import { addCircleOutline, closeOutline, removeCircleOutline } from "../../node_modules/ionicons/icons";
+import { addCircleOutline, closeOutline, removeCircleOutline } from "ionicons/icons";
 import { CarouselArrows, CarouselIndicators } from "../components";
 import { useEffect, useRef } from "react";
 interface Props {
@@ -11,7 +11,7 @@ interface Props {
   setIsCarouselVisible: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export const CertyfikatyBigImageCarousel = (props: Props) => {
+export const BigImageCarousel = (props: Props) => {
   const containerRef = useRef<HTMLElement>(null);
   const exitRef = useRef<HTMLIonIconElement>(null);
   const figureRef = useRef<HTMLElement>(null);

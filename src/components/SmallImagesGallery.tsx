@@ -1,7 +1,7 @@
-import styles from "./CertyfikatySmallImagesGallery.module.scss";
+import styles from "./SmallImagesGallery.module.scss";
 import { IonIcon } from "@ionic/react";
-import { expandOutline } from "../../node_modules/ionicons/icons";
-import { Image } from "../pages/Certyfikaty";
+import { expandOutline } from "ionicons/icons";
+import { Image } from "../pages";
 
 interface Props {
   images: Image[];
@@ -9,7 +9,7 @@ interface Props {
   setIsCarouselVisible: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export const CertyfikatySmallImagesGallery = (props: Props) => {
+export const SmallImagesGallery = (props: Props) => {
   const handleClick = (event: React.MouseEvent) => {
     props.setIsCarouselVisible(true);
     props.setCarouselImage(Number((event.currentTarget as HTMLElement).dataset.id as string));
