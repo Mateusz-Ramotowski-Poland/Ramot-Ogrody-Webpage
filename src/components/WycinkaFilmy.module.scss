@@ -1,0 +1,15 @@
+.iframe {
+  max-width: 69rem;
+}
+
+.movies_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6rem;
+}
+
+.title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin: 7rem 0 2rem 0;
+}

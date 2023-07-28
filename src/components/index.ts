@@ -14,3 +14,4 @@ export * from "./GoogleMap";
 export * from "./Header";
 export * from "./Hero";
 export * from "./TitleH2";
+export * from "./WycinkaFilmy";

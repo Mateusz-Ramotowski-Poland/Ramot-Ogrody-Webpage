@@ -6,7 +6,7 @@ import wycinka5 from "../images/wycinka5.webp";
 import wycinka6 from "../images/wycinka6.webp";
 import wycinka7 from "../images/wycinka7.webp";
 import wycinka8 from "../images/wycinka8.webp";
-import { BigImageCarousel, SmallImagesGallery, TitleH2 } from "../components";
+import { BigImageCarousel, SmallImagesGallery, TitleH2, WycinkaFilmy } from "../components";
 import styles from "./WycinkaDrzew.module.scss";
 import { Image } from "../pages";
 import { useState } from "react";
@@ -63,6 +63,7 @@ export const WycinkaDrzew = () => {
       <TitleH2 text="Wycinka drzew" />
       <p className={styles.introduction}>Kliknij zdjęcie aby je powiększyć</p>
       <SmallImagesGallery images={images} setIsCarouselVisible={setIsCarouselVisible} setCarouselImage={setCarouselImage} />
+      <WycinkaFilmy />
       {isCarouselVisible && (
         <BigImageCarousel
           carouselImage={carouselImage}
