@@ -1,0 +1,51 @@
+@use "../styles/breakpoints" as bp;
+
+.container {
+  display: flex;
+  font-size: 2rem;
+  flex-direction: column;
+
+  @include bp.md {
+    flex-direction: row;
+  }
+
+  @include bp.lg {
+    font-size: 2.5rem;
+  }
+}
+
+.description {
+  line-height: 120%;
+  margin-bottom: 2rem;
+
+  @include bp.lg {
+    line-height: 150%;
+    margin-bottom: 5rem;
+  }
+}
+
+.img {
+  height: 60rem;
+
+  @include bp.sm {
+    width: 80%;
+  }
+
+  @include bp.lg {
+    height: 60rem;
+  }
+}
+
+.text {
+  margin-left: 0rem;
+  margin-top: 3rem;
+
+  @include bp.md {
+    margin-left: 2rem;
+    margin-top: 0rem;
+  }
+
+  @include bp.lg {
+    margin-left: 8rem;
+  }
+}

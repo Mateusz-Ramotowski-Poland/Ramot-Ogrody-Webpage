@@ -1,0 +1,26 @@
+@use "../styles/breakpoints" as bp;
+@use "../styles/colors" as co;
+
+.button {
+  background-color: co.$primary;
+  border-radius: 10%;
+  border: 3px solid #fff;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1.5rem;
+  margin: 0;
+
+  @include bp.sm {
+    font-size: 2.5rem;
+  }
+
+  @include bp.lg {
+    padding: 2.5rem;
+  }
+
+  &:hover {
+    background-color: co.$primary-darker;
+    border: 2px solid co.$primary-darker;
+    cursor: pointer;
+  }
+}

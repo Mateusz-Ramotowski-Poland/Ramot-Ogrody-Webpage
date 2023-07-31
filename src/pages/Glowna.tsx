@@ -1,3 +1,9 @@
+import { GlownaIntroduction } from "../components";
+
 export const Glowna = () => {
-  return <div>Główna</div>;
+  return (
+    <>
+      <GlownaIntroduction />
+    </>
+  );
 };
