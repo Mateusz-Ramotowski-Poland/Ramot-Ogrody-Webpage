@@ -105,7 +105,7 @@ $text-left-position: 1rem;
   & .paragraph_container {
     @extend %shared-paragraph-container;
     bottom: $title-bottom-position + 1.5rem;
-    font-size: 2.9rem;
+    font-size: 2.7rem;
 
     @include bp.sm {
       font-size: 3.3rem;
