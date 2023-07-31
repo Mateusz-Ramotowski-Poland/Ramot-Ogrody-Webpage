@@ -1,3 +1,4 @@
+import { TitleH3 } from "../components";
 import styles from "./WycinkaFilmy.module.scss";
 
 export const WycinkaFilmy = () => {
@@ -5,8 +6,8 @@ export const WycinkaFilmy = () => {
   const height = 715;
 
   return (
-    <>
-      <h3 className={styles.title}>Filmy</h3>
+    <section className={styles.container}>
+      <TitleH3 text="Filmy" />
       <div className={styles.movies_container}>
         <iframe
           width={width}
@@ -28,6 +29,6 @@ export const WycinkaFilmy = () => {
           className={styles.iframe}
         ></iframe>
       </div>
-    </>
+    </section>
   );
 };

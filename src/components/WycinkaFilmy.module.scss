@@ -1,15 +1,40 @@
+@use "../styles/breakpoints" as bp;
+
+$gap-smallest-md: 3rem;
+$gap-lg-xxxlg: 6rem;
+
+.container {
+  margin-top: 12rem;
+}
+
 .iframe {
-  max-width: 69rem;
+  height: 45rem;
+  width: 100%;
+
+  @include bp.sm {
+    height: 45rem;
+    width: calc((100% - $gap-smallest-md) / 2);
+  }
+
+  @include bp.md {
+    height: 61.5rem;
+  }
+
+  @include bp.lg {
+    width: calc((100% - $gap-lg-xxxlg) / 2);
+  }
+
+  @include bp.xlg {
+    height: 71.5rem;
+  }
 }
 
 .movies_container {
   display: flex;
   flex-wrap: wrap;
-  gap: 6rem;
-}
+  gap: $gap-smallest-md;
 
-.title {
-  font-size: 3.2rem;
-  font-weight: bold;
-  margin: 7rem 0 2rem 0;
+  @include bp.lg {
+    gap: $gap-lg-xxxlg;
+  }
 }
