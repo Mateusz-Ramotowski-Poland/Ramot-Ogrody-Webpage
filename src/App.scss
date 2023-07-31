@@ -13,9 +13,9 @@
 
 a {
   text-decoration: none;
-  color: co.$primary-font;
+  color: co.$primary;
   &:hover {
-    color: co.$primary;
+    color: co.$primary-darker;
     cursor: pointer;
   }
 }
