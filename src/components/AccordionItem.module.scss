@@ -21,6 +21,7 @@
 }
 
 .icon {
+  color: co.$primary;
   font-size: 3rem;
   @include bp.xlg {
     font-size: 4rem;
