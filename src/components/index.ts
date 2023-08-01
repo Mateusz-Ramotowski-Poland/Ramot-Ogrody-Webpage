@@ -9,6 +9,7 @@ export * from "./ContactData";
 export * from "./ContactForm";
 export * from "./styles-wrappers/Container";
 export * from "./Footer";
+export * from "./GlownaCarousel";
 export * from "./GlownaIntroduction";
 export * from "./GoogleMap";
 export * from "./Header";

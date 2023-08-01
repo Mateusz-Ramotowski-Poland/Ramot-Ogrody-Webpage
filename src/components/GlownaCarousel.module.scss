@@ -1,0 +1,17 @@
+@use "../styles/breakpoints" as bp;
+
+.img {
+  height: 7rem;
+}
+
+.img_container {
+  display: flex;
+  gap: 4rem;
+  justify-content: flex-start;
+  margin-top: 4rem;
+
+  @include bp.xxlg {
+    gap: 0;
+    justify-content: space-between;
+  }
+}
