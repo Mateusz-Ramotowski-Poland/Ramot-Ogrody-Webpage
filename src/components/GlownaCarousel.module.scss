@@ -1,7 +1,7 @@
 @use "../styles/breakpoints" as bp;
 
 .img {
-  height: 5rem;
+  height: 3.7rem;
 
   @include bp.sm {
     height: 5rem;
@@ -25,7 +25,11 @@
   flex-wrap: wrap;
   gap: 2rem 4rem;
   justify-content: flex-start;
-  margin-top: 4rem;
+  margin-top: 2.5rem;
+
+  @include bp.sm {
+    margin-top: 3rem;
+  }
 
   @include bp.lg {
     gap: 0;
