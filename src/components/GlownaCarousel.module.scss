@@ -1,16 +1,33 @@
 @use "../styles/breakpoints" as bp;
 
 .img {
-  height: 7rem;
+  height: 5rem;
+
+  @include bp.sm {
+    height: 5rem;
+  }
+
+  @include bp.lg {
+    height: 5.5rem;
+  }
+
+  @include bp.xlg {
+    height: 6rem;
+  }
+
+  @include bp.xxlg {
+    height: 7rem;
+  }
 }
 
 .img_container {
   display: flex;
-  gap: 4rem;
+  flex-wrap: wrap;
+  gap: 2rem 4rem;
   justify-content: flex-start;
   margin-top: 4rem;
 
-  @include bp.xxlg {
+  @include bp.lg {
     gap: 0;
     justify-content: space-between;
   }

@@ -11,8 +11,8 @@ export const GlownaCarousel = () => {
       <TitleH3 text="Sprzęt z którego korzystamy" />
       <div className={styles.img_container}>
         <img src={logo1} alt="logo firmy Stihl" className={styles.img}></img>
-        <img src={logo2} alt="logo firmy Fiskars" className={styles.img}></img>
         <img src={logo3} alt="logo firmy Silky Saws" className={styles.img}></img>
+        <img src={logo2} alt="logo firmy Fiskars" className={styles.img}></img>
         <img src={logo4} alt="logo firmy Honda" className={styles.img}></img>
       </div>
     </>
