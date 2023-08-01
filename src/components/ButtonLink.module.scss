@@ -7,20 +7,16 @@
   border: 3px solid #fff;
   color: #fff;
   font-size: 2rem;
-  padding: 1.5rem;
+  padding: 1rem;
   margin: 0;
 
   @include bp.sm {
     font-size: 2.5rem;
   }
 
-  @include bp.lg {
-    padding: 2.5rem;
-  }
-
   &:hover {
     background-color: co.$primary-darker;
-    border: 2px solid co.$primary-darker;
+    border: 3px solid co.$primary-darker;
     cursor: pointer;
   }
 }

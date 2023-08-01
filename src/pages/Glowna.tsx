@@ -1,4 +1,4 @@
-import { GlownaCarousel, GlownaIntroduction, TitleH2 } from "../components";
+import { GlownaCarousel, GlownaEnd, GlownaIntroduction, TitleH2 } from "../components";
 
 export const Glowna = () => {
   return (
@@ -6,6 +6,7 @@ export const Glowna = () => {
       <TitleH2 text="Kim jesteśmy?" />
       <GlownaIntroduction />
       <GlownaCarousel />
+      <GlownaEnd />
     </>
   );
 };
