@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/Ramot-Ogrody-Webpage/static/css/main.ed5013e9.css",
-    "main.js": "/Ramot-Ogrody-Webpage/static/js/main.928a2fd3.js",
+    "main.css": "/Ramot-Ogrody-Webpage/static/css/main.9629fbce.css",
+    "main.js": "/Ramot-Ogrody-Webpage/static/js/main.617556da.js",
     "static/js/443.07407044.chunk.js": "/Ramot-Ogrody-Webpage/static/js/443.07407044.chunk.js",
     "static/js/738.c72824c8.chunk.js": "/Ramot-Ogrody-Webpage/static/js/738.c72824c8.chunk.js",
     "static/js/3.200486a5.chunk.js": "/Ramot-Ogrody-Webpage/static/js/3.200486a5.chunk.js",
     "static/js/372.f051ddd2.chunk.js": "/Ramot-Ogrody-Webpage/static/js/372.f051ddd2.chunk.js",
     "static/js/856.c7c3b608.chunk.js": "/Ramot-Ogrody-Webpage/static/js/856.c7c3b608.chunk.js",
     "static/js/787.22c43ede.chunk.js": "/Ramot-Ogrody-Webpage/static/js/787.22c43ede.chunk.js",
+    "static/media/glowna1.webp": "/Ramot-Ogrody-Webpage/static/media/glowna1.cd410ce0dff9e4e0d7e5.webp",
     "static/media/wycinka7.webp": "/Ramot-Ogrody-Webpage/static/media/wycinka7.d13f8333211421a4db2c.webp",
     "static/media/wycinka2.webp": "/Ramot-Ogrody-Webpage/static/media/wycinka2.b6e13645745fc170496f.webp",
     "static/media/certyfikaty1.webp": "/Ramot-Ogrody-Webpage/static/media/certyfikaty1.c27bf745345358e6793b.webp",
@@ -24,9 +25,21 @@
     "static/media/hero1.webp": "/Ramot-Ogrody-Webpage/static/media/hero1.892216a69cab0a6ba474.webp",
     "static/media/certyfikaty4.webp": "/Ramot-Ogrody-Webpage/static/media/certyfikaty4.d6b9edabb08da68ff003.webp",
     "static/media/certyfikaty2.webp": "/Ramot-Ogrody-Webpage/static/media/certyfikaty2.138173b196056ca87fc5.webp",
+    "static/media/glownaTile6.webp": "/Ramot-Ogrody-Webpage/static/media/glownaTile6.b270ffcced8366e24014.webp",
+    "static/media/glownaTile1.webp": "/Ramot-Ogrody-Webpage/static/media/glownaTile1.22d3e5af85ff7db28116.webp",
+    "static/media/glownaTile3.webp": "/Ramot-Ogrody-Webpage/static/media/glownaTile3.b1eaa04e538b869b2fd5.webp",
+    "static/media/glownaTile4.webp": "/Ramot-Ogrody-Webpage/static/media/glownaTile4.5b28c5191d54616a8bca.webp",
+    "static/media/glownaTile7.webp": "/Ramot-Ogrody-Webpage/static/media/glownaTile7.324ad648536e21e40a59.webp",
+    "static/media/glownaTile5.webp": "/Ramot-Ogrody-Webpage/static/media/glownaTile5.4d2bb3423edfbe694560.webp",
+    "static/media/glownaTile8.webp": "/Ramot-Ogrody-Webpage/static/media/glownaTile8.8cb3df1ec5728a9e774d.webp",
+    "static/media/glownaLogo2.webp": "/Ramot-Ogrody-Webpage/static/media/glownaLogo2.ff9b2c67ffb491967ed6.webp",
+    "static/media/glownaTile2.webp": "/Ramot-Ogrody-Webpage/static/media/glownaTile2.820cd7e310a15788f09c.webp",
+    "static/media/glownaLogo3.webp": "/Ramot-Ogrody-Webpage/static/media/glownaLogo3.70107610cf6b5a76a67d.webp",
+    "static/media/glownaLogo1.webp": "/Ramot-Ogrody-Webpage/static/media/glownaLogo1.2ed225aed9b679164f41.webp",
+    "static/media/glownaLogo4.webp": "/Ramot-Ogrody-Webpage/static/media/glownaLogo4.407165f7ffe9132583cc.webp",
     "index.html": "/Ramot-Ogrody-Webpage/index.html",
-    "main.ed5013e9.css.map": "/Ramot-Ogrody-Webpage/static/css/main.ed5013e9.css.map",
-    "main.928a2fd3.js.map": "/Ramot-Ogrody-Webpage/static/js/main.928a2fd3.js.map",
+    "main.9629fbce.css.map": "/Ramot-Ogrody-Webpage/static/css/main.9629fbce.css.map",
+    "main.617556da.js.map": "/Ramot-Ogrody-Webpage/static/js/main.617556da.js.map",
     "443.07407044.chunk.js.map": "/Ramot-Ogrody-Webpage/static/js/443.07407044.chunk.js.map",
     "738.c72824c8.chunk.js.map": "/Ramot-Ogrody-Webpage/static/js/738.c72824c8.chunk.js.map",
     "3.200486a5.chunk.js.map": "/Ramot-Ogrody-Webpage/static/js/3.200486a5.chunk.js.map",
@@ -35,7 +48,7 @@
     "787.22c43ede.chunk.js.map": "/Ramot-Ogrody-Webpage/static/js/787.22c43ede.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed5013e9.css",
-    "static/js/main.928a2fd3.js"
+    "static/css/main.9629fbce.css",
+    "static/js/main.617556da.js"
   ]
 }
