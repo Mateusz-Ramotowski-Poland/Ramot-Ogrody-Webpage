@@ -12,6 +12,8 @@ export * from "./Footer";
 export * from "./GlownaCarousel";
 export * from "./GlownaEnd";
 export * from "./GlownaIntroduction";
+export * from "./GlownaTile";
+export * from "./GlownaTiles";
 export * from "./GoogleMap";
 export * from "./Header";
 export * from "./Hero";
