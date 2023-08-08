@@ -21,7 +21,8 @@ export const GlownaTile = (props: Props) => {
         <img src={src} alt={figcaption} className={styles.img} />
         <figcaption className={styles.figcaption}>{figcaption}</figcaption>
       </figure>
-      <p className={styles.description}>{description}</p>
+      {/* Description will be added later - now I do not have data from client */}
+      {/*  <p className={styles.description}>{description}</p> */}
 
       <Link to={link}>Dowiedz się więcej</Link>
     </div>

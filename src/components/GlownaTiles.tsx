@@ -6,7 +6,6 @@ import tile4 from "../images/glownaTile4.webp";
 import tile5 from "../images/glownaTile5.webp";
 import tile6 from "../images/glownaTile6.webp";
 import tile7 from "../images/glownaTile7.webp";
-import tile8 from "../images/glownaTile8.webp";
 import { TitleH3, GlownaTile, Tile } from "../components";
 
 const tiles: Tile[] = [
@@ -26,39 +25,33 @@ const tiles: Tile[] = [
   },
   {
     description: "string",
-    link: "/",
-    figcaption: "string",
+    link: "/pielegnacja-ogrodow",
+    figcaption: "Sadzenie drzew i krzewów",
     src: tile3,
   },
   {
-    description: "string",
-    link: "/",
-    figcaption: "string",
+    description: "Sprzątanie liści",
+    link: "/pielegnacja-ogrodow",
+    figcaption: "Sprzątanie liści",
     src: tile4,
   },
   {
     description: "string",
-    link: "/",
-    figcaption: "string",
+    link: "/wycinka-drzew",
+    figcaption: "Pięlęgnacja drzew",
     src: tile5,
   },
   {
     description: "string",
-    link: "/",
-    figcaption: "string",
+    link: "/wycinka-drzew",
+    figcaption: "Wycinka drzew",
     src: tile6,
   },
   {
     description: "string",
-    link: "/",
-    figcaption: "string",
+    link: "/wycinka-drzew",
+    figcaption: "Alpinistyczna wycinka drzew",
     src: tile7,
-  },
-  {
-    description: "string",
-    link: "/",
-    figcaption: "string",
-    src: tile8,
   },
 ];
 

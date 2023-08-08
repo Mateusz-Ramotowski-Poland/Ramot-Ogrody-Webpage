@@ -16,8 +16,6 @@ Zdjęcie dodane przez Thirdman: https://www.pexels.com/pl-pl/zdjecie/osoba-zakla
 
 Photo by <a href="https://unsplash.com/@devsnice?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Semyon Borisov</a> on <a href="https://unsplash.com/photos/lQjcPVw1Vck?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
-Zdjęcie dodane przez Kampus Production: https://www.pexels.com/pl-pl/zdjecie/kobieta-klienci-papierkowa-robota-ubezpieczenie-8439646/
-
 Photo by <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Spiske</a> on <a href="https://unsplash.com/photos/_b9mXKt0fc4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 Photo by <a href="https://unsplash.com/@jimmynilssonmasth?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jimmy Nilsson Masth</a> on <a href="https://unsplash.com/photos/ka9CiTCVrD8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
