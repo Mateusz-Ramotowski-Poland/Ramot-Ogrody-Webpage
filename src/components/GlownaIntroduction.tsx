@@ -1,6 +1,6 @@
 import styles from "./GlownaIntroduction.module.scss";
-import { ButtonLink } from "../components";
 import glowna1 from "../images/glowna1.webp";
+import { Link } from "react-router-dom";
 
 export const GlownaIntroduction = () => {
   return (
@@ -15,7 +15,7 @@ export const GlownaIntroduction = () => {
           Pracujemy głównie na obszarze powiatu Giżyckiego, w północno wschodniej części Polski. Ciągle poszerzamy nasze umiejętności i bierzemy
           udział w specjalistycznych szkoleniach.
         </p>
-        <ButtonLink text="Zobacz certyfikaty" href="/certyfikaty" />
+        <Link to="/certyfikaty">Zobacz certyfikaty</Link>
       </div>
     </section>
   );

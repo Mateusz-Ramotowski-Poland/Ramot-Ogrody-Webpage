@@ -4,6 +4,7 @@
   display: flex;
   font-size: 2rem;
   flex-direction: column;
+  margin-bottom: 13rem;
 
   @include bp.md {
     flex-direction: row;

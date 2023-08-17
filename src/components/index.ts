@@ -1,7 +1,6 @@
 export * from "./Accordion";
 export * from "./AccordionItem";
 export * from "./BigImageCarousel";
-export * from "./ButtonLink";
 export * from "./CarouselArrows";
 export * from "./CarouselIndicator";
 export * from "./CarouselIndicators";

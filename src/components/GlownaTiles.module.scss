@@ -1,14 +1,14 @@
 @use "../styles/breakpoints" as bp;
 @use "../styles/variables" as va;
 
-$gap-row-smallest-sm: 6rem;
-$gap-row-md-xxxlg: 10rem;
+$gap-row-smallest-sm: 4rem;
+$gap-row-md-xxxlg: 5rem;
 
 .section {
   display: flex;
   flex-wrap: wrap;
   gap: $gap-row-smallest-sm va.$main-column-gap-tiles-smallest-sm;
-  margin: 4rem 0;
+  margin: 4rem 0 13rem 0;
 
   @include bp.md {
     gap: $gap-row-md-xxxlg va.$main-column-gap-tiles-md-xxxlg;
