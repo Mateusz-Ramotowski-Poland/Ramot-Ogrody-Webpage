@@ -3,57 +3,20 @@ import { AccordionItem, SectionContainer } from "../components";
 export const Accordion = () => {
   const accordionItems = [
     {
-      question: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-    voluptate velit?`,
-      answer: ` Esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-    est laborum.`,
+      question: `Czy zapewniacie transport drzewa?`,
+      answer: `Tak. Zapewniamy transport drzewa. Na terenie miasta Giżycko transport jest darmowy. Poza miastem Giżycko za transport trzeba dodatkowo zapłacić.`,
     },
     {
-      question: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-    voluptate velit?`,
-      answer: ` Esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-    est laborum.`,
+      question: `Czy sprzedajecie ułożone drzewo?`,
+      answer: `Sprzedajemy ułożone drzewo, które przywozimy na przyczepie. Można samemu zmierzyć wymiary przyczepki, żeby sprawdzić ilość drzewa.`,
     },
     {
-      question: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-    voluptate velit?`,
-      answer: ` Esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-    est laborum.`,
-    },
-    {
-      question: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-    voluptate velit?`,
-      answer: ` Esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-    est laborum.`,
-    },
-    {
-      question: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-    voluptate velit?`,
-      answer: ` Esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-    est laborum.`,
-    },
-    {
-      question: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-    voluptate velit?`,
-      answer: ` Esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-    est laborum.`,
-    },
-    {
-      question: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-    voluptate velit?`,
-      answer: ` Esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-    est laborum.`,
+      question: `Ile zapłacę za wycinkę drzewa?`,
+      answer: `Nie ma jednej ustalonej ceny za wycinkę drzewa. Cena ta różni się w zależności od trudności wycinki - odległości od innych budowli, linii energetycznych, płotów. Cena różni się również w zależności od wielkości drzewa, stopnia pochyłu. Polecam przedzwonić i wysłać do nas zdjęcia przez formularz kontaktowy - wtedy możemy przyjechać do Państwa i zrobić wycenę.`,
     },
   ];
 
-  const accordionItemsList = accordionItems.map((item, i) => <AccordionItem question={item.question} answer={item.question} key={i + 1} />);
+  const accordionItemsList = accordionItems.map((item, i) => <AccordionItem question={item.question} answer={item.answer} key={i + 1} />);
 
   return (
     <>
