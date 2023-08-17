@@ -1,3 +1,10 @@
+import { NotFinishedPage, TitleH2 } from "../components";
+
 export const PielegnacjaOgrodow = () => {
-  return <div>PielegnacjaOgrodow</div>;
+  return (
+    <>
+      <TitleH2 text="Pielęgnacja ogrodów" />
+      <NotFinishedPage />
+    </>
+  );
 };

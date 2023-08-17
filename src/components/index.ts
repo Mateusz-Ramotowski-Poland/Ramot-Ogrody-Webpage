@@ -16,6 +16,7 @@ export * from "./GlownaTiles";
 export * from "./GoogleMap";
 export * from "./Header";
 export * from "./Hero";
+export * from "./NotFinishedPage";
 export * from "./styles-wrappers/SectionContainer";
 export * from "./SmallImagesGallery";
 export * from "./TitleH2";

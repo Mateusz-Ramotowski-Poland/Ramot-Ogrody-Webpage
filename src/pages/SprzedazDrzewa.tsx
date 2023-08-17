@@ -1,3 +1,10 @@
+import { NotFinishedPage, TitleH2 } from "../components";
+
 export const SprzedazDrzewa = () => {
-  return <div>SprzedazDrzewa</div>;
+  return (
+    <>
+      <TitleH2 text="Sprzedaż drzewa" />
+      <NotFinishedPage />
+    </>
+  );
 };
