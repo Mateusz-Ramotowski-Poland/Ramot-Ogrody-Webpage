@@ -1,23 +1,58 @@
-Photos inside Hero:
+# Ramot Ogrody company website
 
-Zdjęcie dodane przez Torsten Dettlaff: https://www.pexels.com/pl-pl/zdjecie/okragly-brazowy-drewniany-5-elementowy-zestaw-do-jadalni-na-trawniku-59321/
+I created website for company Ramot ogrody from scratch. Live demo: [_here_](https://mateusz-ramotowski-poland.github.io/Ramot-Ogrody-Webpage/).
 
-Photo by <a href="https://unsplash.com/@brigittetohm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brigitte Tohm</a> on <a href="https://unsplash.com/photos/vTaHR-wcOzY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+## Table of Contents
 
-Photo by <a href="https://unsplash.com/es/@photosbylaron?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">LaRon Rosser</a> on <a href="https://unsplash.com/photos/Dn_KGNk2IoY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- [General Info](#general-information)
+- [Technologies Used](#technologies-used)
+- [Project Status](#project-status)
+- [Contact](#contact)
+- [Photos](#photos)
 
-Photos inside Główna kafelki:
+## General Information
 
-Photo by <a href="https://unsplash.com/@lapunin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sergey Lapunin</a> on <a href="https://unsplash.com/photos/GSCoe7Uk8A8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+The main goal of this project is to make website for company located in North east Poland - [_Ramot Ogrody company_](https://www.google.com/maps/place/Ramot+Ogrody/@54.0432729,21.6351674,12.25z/data=!4m6!3m5!1s0x46e22938b4387f03:0x6170e85feb4dab82!8m2!3d54.0602521!4d21.6398218!16s%2Fg%2F11kt5760p8?hl=pl-PL&entry=ttu).
+The page is responsive from 300px to 1920px. The page was tested on Chrome, Safari, Edge and Firefox browsers. I was using JIRA to manage tasks for this project. I created website design myself. I made all layout by myself without CSS libraries.
 
-Photo by <a href="https://unsplash.com/@eugenezhyvchik?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eugene Zhyvchik</a> on <a href="https://unsplash.com/photos/duJg3gGlYm8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+## Technologies Used
 
-Zdjęcie dodane przez Thirdman: https://www.pexels.com/pl-pl/zdjecie/osoba-zaklad-ziemia-srodowisko-7656745/
+Project is created with:
 
-Photo by <a href="https://unsplash.com/@devsnice?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Semyon Borisov</a> on <a href="https://unsplash.com/photos/lQjcPVw1Vck?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- HTML5
+- SCSS
+- TypeScript
+- React
 
-Photo by <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Spiske</a> on <a href="https://unsplash.com/photos/_b9mXKt0fc4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+I was also using libraries:
 
-Photo by <a href="https://unsplash.com/@jimmynilssonmasth?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jimmy Nilsson Masth</a> on <a href="https://unsplash.com/photos/ka9CiTCVrD8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- [_typed.js_](https://github.com/mattboldt/typed.js/)
+- [_TagCanvas_](https://www.goat1000.com/tagcanvas.php)
 
-Photo by <a href="https://unsplash.com/@hjkp?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">henry perks</a> on <a href="https://unsplash.com/photos/uaKF5IZVcGc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+## Project Status
+
+The project is finished. It took me 129 hours to finish this project on 18.08.2023.
+
+## Contact
+
+Created by Mateusz Ramotowski (mateusz.ramotowski.praca@gmail.com) - feel free to contact me!
+
+## Photos
+
+I was using free photos from [_Pexels_](https://www.pexels.com/) and [_Unsplash_](https://unsplash.com/). Below are links to the authors photos. Thank you very much for the great photos!
+
+Photos hero:
+
+- [_Torsten Dettlaff_](https://www.pexels.com/pl-pl/zdjecie/okragly-brazowy-drewniany-5-elementowy-zestaw-do-jadalni-na-trawniku-59321/)
+- [_Brigitte Tohm_](https://unsplash.com/photos/vTaHR-wcOzY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+- [_LaRon Rosser_](https://unsplash.com/photos/Dn_KGNk2IoY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+Photos main page:
+
+- [_Sergey Lapunin_](https://unsplash.com/photos/GSCoe7Uk8A8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+- [_Eugene Zhyvchik_](https://unsplash.com/photos/duJg3gGlYm8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+- [_Thirdman_](https://www.pexels.com/pl-pl/zdjecie/osoba-zaklad-ziemia-srodowisko-7656745/)
+- [_Semyon Borisov_](https://unsplash.com/photos/lQjcPVw1Vck?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+- [_Markus Spiske_](https://unsplash.com/photos/_b9mXKt0fc4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+- [_Jimmy Nilsson Masth_](https://unsplash.com/photos/ka9CiTCVrD8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+- [_henry perks_](https://unsplash.com/photos/uaKF5IZVcGc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
